@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Image search
 Image search app made with React.js and Unsplash API. App has implemented autocompletion of searching word from [Datamuse API](http://www.datamuse.com/api/).
 
-You can test live demo [here](https://agonys.github.io/image-search-unsplash/#/)
+You can test [live demo here](https://agonys.github.io/image-search-unsplash/#/)
 
 ## Setup
 
