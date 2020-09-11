@@ -1,8 +1,8 @@
 import Unsplash from 'unsplash-js';
 
 const unsplash = new Unsplash({
-   accessKey: 'oZlj3lUaSwhVnyul8EKOgeq4GBCJljoGVJ3D6oYPH6E',
-   timeout: 10000,
+   accessKey: 'Tiyk0aSVgvnWC8CY7Kpp3hXyCrR2bvSDk4tOgHPv5_8',
+   timeout: 30000,
 })
 
 export default unsplash;
