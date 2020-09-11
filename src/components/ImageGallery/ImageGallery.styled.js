@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const H1 = styled.h1`
-   margin: 20px 0;
+   margin: 20px 0 20px 10px;
 
    &.loading {
       text-align: center;
    }
+
+   @media screen and (min-width: 768px) { margin: 20px 0 }
 `;
 
 export const GalleryCotainer = styled.div`
-   @media screen and (min-width: 768px) {
-      padding: 0 15px;
-   }
+   @media screen and (min-width: 768px) { padding: 0 15px }
 `;
 
 export const Gallery = styled.section`
@@ -21,13 +21,8 @@ export const Gallery = styled.section`
    max-width: 1200px;
    margin: 0 auto;
 
-   @media screen and (min-width: 768px) {
-      column-count: 2;
-   }
-
-   @media screen and (min-width: 992px) {
-      column-count: 3;
-   }
+   @media screen and (min-width: 768px) { column-count: 2 }
+   @media screen and (min-width: 992px) { column-count: 3 }
 `;
 
 export const ImageContainer = styled.div`

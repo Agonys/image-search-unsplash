@@ -40,6 +40,7 @@ class SearchBar extends Component {
    }
 
    formReset = () => {
+      clearTimeout(this.typingTimer);
       this.formRef.current.reset();
       this.setState({
          hintsLoading: true,
