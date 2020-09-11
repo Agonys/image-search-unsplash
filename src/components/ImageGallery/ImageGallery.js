@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import unsplash from 'api/api';
 import { Link } from 'react-router-dom';
 
-import { H1, GalleryCotainer, Gallery, ImageContainer, DarkOverlay } from './ImageGallery.styled';
+import { H2, GalleryCotainer, Gallery, ImageContainer, DarkOverlay } from './ImageGallery.styled';
 import NoImagesFound from 'components/NoImagesFound/NoImagesFound';
 import zoomInIcon from 'assets/images/zoom-in.svg';
 
@@ -81,7 +81,7 @@ class ImageGallery extends PureComponent {
                </Link>
             )
          });
-         searchHeader = <H1>{searchTerm}</H1>;
+         searchHeader = <H2>{searchTerm}</H2>;
 
       } else {
          searchHeader = <NoImagesFound searchTerm={searchTerm} />;
@@ -90,7 +90,7 @@ class ImageGallery extends PureComponent {
       return (
          <GalleryCotainer>
             {areImagesLoading
-               ? <H1 className="loading">Loading...</H1>
+               ? <H2 className="loading">Loading...</H2>
                : <>
                   {searchHeader}
                   {photosList ? <Gallery>{photosList}</Gallery> : null}

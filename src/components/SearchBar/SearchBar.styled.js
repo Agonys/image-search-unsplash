@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
    width: 100%;
-   padding: 20px 0 0;
+   padding: 20px 15px 0;
 `;
 
 export const Form = styled.form`
@@ -12,7 +12,7 @@ export const Form = styled.form`
    grid-template-columns: auto 1fr;
    grid-auto-rows: 40px auto;
    background-color: white;
-   width: 80%;
+   width: 100%;
    position: relative;
    border-radius: 20px;
    box-shadow: 1px 1px 3px rgb(0 0 0 / 0.3);
@@ -33,10 +33,6 @@ export const Input = styled.input`
    &:focus {
       outline: 0;
    }
-
-   &:focus + ul {
-      display: block;
-   }
 `;
 
 export const Button = styled.button`
@@ -53,7 +49,6 @@ export const Button = styled.button`
 `;
 
 export const HintsList = styled.ul`
-   display: none;
    position: relative;
    top: 3px;
    width: 100%;

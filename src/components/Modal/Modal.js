@@ -72,7 +72,7 @@ class Modal extends Component {
 
    //if user click outside of modal.
    handleCloseModal = e => {
-      if(this.modalContainer && !this.modalContainer.current.contains(e.target)) {
+      if(this.modalContainer.current && !this.modalContainer.current.contains(e.target)) {
          this.props.history.goBack();
       }
    }

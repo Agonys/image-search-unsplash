@@ -8,7 +8,7 @@ import Modal from 'components/Modal/Modal';
 class App extends React.Component {
    render() {
       const { location } = this.props;
-      const background = location.state ? location.state.background : false;
+      const background = location.state && location.state.background;
 
       return (
          <>
@@ -28,7 +28,7 @@ class App extends React.Component {
                      component={ImageGallery} />
                </Switch>
 
-               { background && 
+               { background &&
                   <Route path='/photo/:imageId'>
                      <Modal {...this.props} />
                   </Route>

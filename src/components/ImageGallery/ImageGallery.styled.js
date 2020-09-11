@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const H1 = styled.h1`
-   margin: 20px 0 20px 10px;
+export const H2 = styled.h2`
+   margin: 20px 0 20px 15px;
 
    &.loading {
       text-align: center;
