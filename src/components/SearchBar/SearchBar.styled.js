@@ -33,6 +33,10 @@ export const Input = styled.input`
    &:focus {
       outline: 0;
    }
+
+   &:focus + ul {
+      display: block;
+   }
 `;
 
 export const Button = styled.button`
@@ -49,6 +53,7 @@ export const Button = styled.button`
 `;
 
 export const HintsList = styled.ul`
+   display: none;
    position: relative;
    top: 3px;
    width: 100%;
@@ -67,7 +72,7 @@ export const HintsList = styled.ul`
 
       &.option {
          cursor: pointer;
-         
+
          &:hover { background-color: #f5f5f5 }
       }
 
